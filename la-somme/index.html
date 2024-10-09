@@ -1,0 +1,32 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Somme de deux nombres</title>
+    <script>
+        function calculerSomme() {
+            // Récupération des valeurs des champs de saisie
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+            let c = Number(document.getElementById("c").value);
+
+            // Calcul de la somme
+            let somme = a + b;
+
+            // Division de la somme par c
+            let resultat = somme / c;
+
+            // Affichage du résultat
+            document.getElementById("resultat").innerText = "La somme de a et b divisee par c est : " + resultat;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculer la somme de deux nombres et la diviser par un troisieme</h1>
+    <input type="number" id="a" placeholder="Entrez le premier nombre">
+    <input type="number" id="b" placeholder="Entrez le deuxieme nombre">
+    <input type="number" id="c" placeholder="Entrez le troisieme nombre">
+    <button onclick="calculerSomme()">Calculer</button>
+    <p id="resultat"></p>
+</body>
+</html>
